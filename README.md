@@ -187,14 +187,14 @@ For ease of use, the  `UsingTellor`  repo comes with a version of [Tellor Playgr
 #### 5. To run tests:
 
 ```bash
-npm run test
+npm hardhat test
 ```
 
-#### 6. Migrations:
-Just run truffle migrate with desired Network
+#### 6. Deployment:
+Just run hardhat run with desired Network
 
 ```bash
-truffle migrate --network rinkeby
+npx hardhat run --network <your-network> scripts/deploy.js
 ```
 
 
@@ -207,7 +207,8 @@ General Tellor Developer's [Documentation](https://tellor.readthedocs.io/en/late
 
 Metamask - www.metamask.io 
 <br>
-Truffle - http://truffleframework.com/
+Hardhat - https://hardhat.org/
+Waffle - https://getwaffle.io/
 
 
 #### Maintainers <a name="maintainers"> </a> 
@@ -231,4 +232,4 @@ This repository is maintained by the Tellor team - [www.tellor.io](https://www.t
 
 #### Copyright
 
-Tellor Inc. 2019
+Tellor Inc. 2021
