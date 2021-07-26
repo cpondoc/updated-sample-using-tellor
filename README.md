@@ -208,6 +208,7 @@ General Tellor Developer's [Documentation](https://tellor.readthedocs.io/en/late
 Metamask - www.metamask.io 
 <br>
 Hardhat - https://hardhat.org/
+<br>
 Waffle - https://getwaffle.io/
 
 
