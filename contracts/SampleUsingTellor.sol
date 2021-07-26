@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: MIT
 pragma solidity >=0.7.0;
-import "./UsingTellor.sol";
-import "./TellorPlayground.sol";
+
+import "usingtellor/contracts/UsingTellor.sol";
 
 contract SampleUsingTellor is UsingTellor {
     constructor(address payable _tellorAddress) UsingTellor(_tellorAddress) public {}
