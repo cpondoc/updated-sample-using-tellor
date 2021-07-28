@@ -1,6 +1,6 @@
 const { expect } = require("chai");
 const { ethers } = require("hardhat");
-
+// const { contract } = require("usingtellor/contracts/TellorPlayground.sol:TellorPlayground")
 const { abi, bytecode } = require("usingtellor/artifacts/contracts/TellorPlayground.sol/TellorPlayground.json")
 
 describe("Tellor", function() {
@@ -9,6 +9,7 @@ describe("Tellor", function() {
 
   // Set up Tellor Playground Oracle and SampleUsingTellor
   beforeEach(async function () {
+    // let otherTellorOracle = await ethers.getContractFactory("contracts/TellorPlayground.sol:TellorPlayground")
     let TellorOracle = await ethers.getContractFactory(abi, bytecode);
     tellorOracle = await TellorOracle.deploy();
     await tellorOracle.deployed();
